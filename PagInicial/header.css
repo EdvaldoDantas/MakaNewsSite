@@ -46,7 +46,7 @@ header > menu > nav > ul{
   margin-top: 10px;
   height: 25px;
   justify-content: space-around;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 header > menu > nav > ul > li{
     margin-left:  20px;
@@ -59,10 +59,11 @@ span{
     user-select: none;
     cursor: default;
 }
-#navgeter span:hover{
+#navgeter .material-symbols-outlined:hover{
     color: rgb(0, 132, 255);
-    font-weight: bolder;
-    border-bottom: 3px solid  rgb(0, 132, 255);
+    border-bottom: 3px solid  rgb(8, 123, 230);
+    transition: .5s;
+    font-size: 2em;
 }
 button{
     user-select: none;
