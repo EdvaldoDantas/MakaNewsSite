@@ -12,6 +12,10 @@ menu.addEventListener('click',()=>{
         fechado = true
     }
 })
+definicao = document.getElementById("Def")
+definicao.addEventListener('click',()=>{
+    window.open('Definições.html')
+})
 document.addEventListener('click',(event)=>{
    const cli = menu.contains(event.target)
    if(!cli){
