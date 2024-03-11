@@ -59,4 +59,8 @@ main{
 }
 span{
     user-select: none;
+    cursor: default;
+}
+button{
+    user-select: none;
 }
