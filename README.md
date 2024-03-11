@@ -1,2 +1,1 @@
-# MakaNewsSite 
- Site do makarenco
+# Estamos projectando um site para a nossa escola 
