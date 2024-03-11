@@ -1,27 +1,31 @@
 let menu_escondido = document.getElementById('menu-escondido')
 let menu = document.getElementById('menu')
 let fechado = true
-menu_escondido.style.display = 'none'
+
 menu.addEventListener('click',()=>{
-    if(fechado){
-        menu_escondido.style.display = 'block'
-        fechado = false
+   
+    if(menu_escondido.classList.contains('fechado')){
+        menu_escondido.classList.remove('fechado')
+        menu_escondido.classList.add('abrir')
     }
-    else {
-        menu_escondido.style.display = 'none'
-        fechado = true
+    else if(menu_escondido.classList.contains('abrir')){
+        menu_escondido.classList.remove('abrir')
+        menu_escondido.classList.add('fechado')
     }
 })
+
 definicao = document.getElementById("Def")
 definicao.addEventListener('click',()=>{
-    window.open('Definições.html')
+    window.location.href = 'Definições.html'
 })
 document.addEventListener('click',(event)=>{
    const cli = menu.contains(event.target)
    if(!cli){
-      menu_escondido.style.display = 'none'
+        menu_escondido.classList.remove('abrir')
+        menu_escondido.classList.add('fechado')
    }
 })
 document.addEventListener('scroll',()=>{
-    menu_escondido.style.display = 'none'
+    menu_escondido.classList.remove('abrir')
+    menu_escondido.classList.add('fechado')
 })

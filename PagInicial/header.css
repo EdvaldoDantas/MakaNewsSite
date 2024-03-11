@@ -15,9 +15,10 @@ header{
     border-left: none;
     border-right:none;
     position: fixed;
-    background-color: white;
+   background-color: white;
     width: 100%;
-    color: blue;
+    box-shadow: 0.5px 0.5px 0.2px rgba(0, 0, 0, 0.514);
+
 }
 header > menu > .nav-up{
     display: contents;
@@ -37,10 +38,7 @@ header h1{
 header > menu > .nav-up > ul > li{
     padding: 8px;
 }
-header > menu > .nav-up > ul > div{
-    margin-top: 8px;
-    margin-right:5px ;
-}
+
 header > menu > nav > ul{
   display: flex; 
   list-style: none;
@@ -54,12 +52,17 @@ header > menu > nav > ul > li{
     margin-left:  20px;
 }
 main{
-    
     padding-top: 90px;
+    background-color: rgba(240, 235, 235, 0.329);
 }
 span{
     user-select: none;
     cursor: default;
+}
+#navgeter span:hover{
+    color: rgb(0, 132, 255);
+    font-weight: bolder;
+    border-bottom: 3px solid  rgb(0, 132, 255);
 }
 button{
     user-select: none;

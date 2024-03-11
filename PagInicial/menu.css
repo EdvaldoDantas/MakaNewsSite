@@ -1,25 +1,61 @@
-header > menu > .nav-up > ul > div{
-    background-color: whitesmoke;
+#nav-menu{
     position: absolute;
     right: -10px;
     top: 20px;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    border-top-right-radius: 5%;
+
 }
-header > menu > .nav-up > ul > div > menu > ul > li{
+#menu-escondido li{
     list-style: none;
     padding: 10px;
     margin-top: 5px;
     cursor: default;
 }
-header > menu > .nav-up > ul > div > menu > ul > li:hover{
+#menu-escondido{
+    background-color: rgb(211, 211, 211);
+    z-index: 10000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.abrir{
+    opacity: 1;
+    animation: abrir 0.5s;
+}
+.fechado{
+    opacity: 0;
+   animation: fechar 1s;
+}
+#menu-escondido li:hover{
     border: 1px solid;
     border-left: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     transition: 0.5s;
+    padding-left: 5px;
 }
 #menu{
     cursor: pointer;
+}
+@keyframes abrir{
+  0%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fechar {
+   100%{
+      opacity: 0;
+      transform: translateX(90%);
+   }
+   0%{
+      opacity: 1;
+      transform: translateX(0%);
+   }
 }
