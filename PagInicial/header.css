@@ -17,6 +17,7 @@ header{
     position: fixed;
     background-color: white;
     width: 100%;
+    color: blue;
 }
 header > menu > .nav-up{
     display: contents;
@@ -55,4 +56,7 @@ header > menu > nav > ul > li{
 main{
     
     padding-top: 90px;
+}
+span{
+    user-select: none;
 }
