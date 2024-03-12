@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         const cli = menu.contains(event.target)
         if(!cli){
              menu_escondido.classList.remove('abrir')
-             menu_escondido.classList.add('inicio')
+             menu_escondido.classList.add('fechado')
         }
      })
      document.addEventListener('scroll',()=>{
