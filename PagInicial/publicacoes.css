@@ -13,29 +13,13 @@
     padding: 5px;
     border-radius: 50px;
 }
-.outros{
-  margin-top: 10px;
-  display: flex;
-  border-top: 2px solid gray;    
-}
-.pr{
-    margin-top: 10px;
-    margin-left: 6px;
-}
+
 .nome{
-    margin-top: 14px;
-    margin-left: 6px;
     font-weight: bold;
     color: rgb(100, 97, 97);
 }
-#pt{
-    margin: 10px;
-    margin-left: 35%;
-}
-#x{
-    margin-top: 13px;
-    
-}
-.conteudo{
-   padding:10px;
+.fotos{
+    width: 50px;
+    margin:8px 5px 0px 10px;
+    border-radius: 50%;
 }
