@@ -11,12 +11,48 @@
 }
 .btn{
     padding: 5px;
-    border-radius: 50px;
 }
-
+.conteudo{
+    padding: 10px;
+}
+.reacoes .btn:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.reacoes .btn{
+    border: none;
+    width: 100%;
+}
+.reacoes{
+    display: flex;
+    justify-content: space-around;
+    border-left:none ;
+    border-right: none;
+    border: 1px solid gray;
+}
+#feed{
+    border-top: 3px solid rgb(156, 151, 151);
+    margin-top: 10px;
+}
+.idPerfil{
+    display: flex;
+    justify-content: space-between;
+}
+#perfilLink{
+    display: flex;
+    margin-left: 10px;
+}
 .nome{
+    margin-top: 21px;
+    margin-left: 5px;
     font-weight: bold;
     color: rgb(100, 97, 97);
+}
+.idPerfil span{
+    margin-top: 20px;
+    margin-right: 10px;
 }
 .fotos{
     width: 50px;
