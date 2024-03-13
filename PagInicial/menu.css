@@ -1,6 +1,4 @@
 #nav-menu{
-    position: absolute;
-    right: -10px;
     top: 20px;
     padding-top: 10px;
     padding-right: 10px;
@@ -20,17 +18,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.inicio{
-  opacity: 0;   
-}
-.abrir{
-    opacity: 1;
-    animation: abrir 0.5s;
-}
-.fechado{
-    opacity: 0;
-    animation: fechar 1s;
-}
+
 
 #menu-escondido li:hover{
     border: 1px solid;

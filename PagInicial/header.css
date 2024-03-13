@@ -53,7 +53,7 @@ header > menu > nav > ul > li{
 }
 main{
     padding-top: 90px;
-    background-color: rgba(240, 235, 235, 0.329);
+    background-color:white;
 }
 span{
     user-select: none;

@@ -1,33 +1,48 @@
 let menu_escondido = document.getElementById('menu-escondido')
 let menu = document.getElementById('menu')
+const nav_menu = document.getElementById('nav-menu')
 let fechado = true
- 
-document.addEventListener('DOMContentLoaded',()=>{
+let aberto = false
+
+let firstPosition = ()=>{
+    nav_menu.style ="position: absolute; right:-159px"
+}
+var posicao = parseInt(nav_menu.style.right)
+window.onload = firstPosition()
+
     menu.addEventListener('click',()=>{
-   
-        if(menu_escondido.classList.contains('inicio') | menu_escondido.classList.contains('fechado')){
-            menu_escondido.classList.remove('inicio')
-            menu_escondido.classList.remove('fechado')
-            menu_escondido.classList.add('abrir')
+        let posicao = parseInt(nav_menu.style.right)
+        if(fechado){
+            posicao = -10
+            nav_menu.style.right = `${posicao}px`
+            fechado = false
+            aberto = true
         }
-        else if(menu_escondido.classList.contains('abrir')){
-            menu_escondido.classList.remove('abrir')
-            menu_escondido.classList.add('fechado')
-        }
-    })
-    document.addEventListener('click',(event)=>{
-        const cli = menu.contains(event.target)
-        if(!cli){
-             menu_escondido.classList.remove('abrir')
-             menu_escondido.classList.add('fechado')
-        }
-     })
-     document.addEventListener('scroll',()=>{
-        if(!menu_escondido.classList.contains('inicio')){
-             menu_escondido.classList.remove('abrir')
-             menu_escondido.classList.add('fechado')
+        else if(aberto){
+            posicao = -159
+            nav_menu.style.right = `${posicao}px` 
+            fechado = true
+            aberto = false
         }
     })
+document.addEventListener('click',(event)=>{
+     let cont = menu.contains(event.target)
+    if(!cont){
+        if(aberto){
+            posicao = -159
+            nav_menu.style.right = `${posicao}px` 
+            fechado = true
+            aberto = false
+        }
+    }
+})
+document.addEventListener('scroll',()=>{
+    if(aberto){
+        posicao = -159
+        nav_menu.style.right = `${posicao}px` 
+        fechado = true
+        aberto = false
+    }
 })
 
 definicao = document.getElementById("Def")

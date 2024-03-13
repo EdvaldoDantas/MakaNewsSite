@@ -25,6 +25,8 @@
 .nome{
     margin-top: 14px;
     margin-left: 6px;
+    font-weight: bold;
+    color: rgb(100, 97, 97);
 }
 #pt{
     margin: 10px;
