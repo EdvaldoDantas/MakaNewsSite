@@ -13,6 +13,7 @@
     cursor: default;
 }
 #menu-escondido{
+    padding: 0px 13px 0px 0px;
     background-color: rgb(211, 211, 211);
     z-index: 10000;
     border-top-left-radius: 10px;
@@ -31,23 +32,9 @@
 #menu{
     cursor: pointer;
 }
-@keyframes abrir{
-  0%{
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0%);
-  }
+#up-li{
+  border-top-left-radius: 14%;
 }
-@keyframes fechar {
-   100%{
-      opacity: 0;
-      transform: translateX(90%);
-   }
-   0%{
-      opacity: 1;
-      transform: translateX(0%);
-   }
+#bottom-li{
+  border-bottom-left-radius: 14%;
 }

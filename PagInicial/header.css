@@ -33,6 +33,7 @@ header h1{
     margin-top: 3px;
     font-size: 1.4em;
     margin-left: 5px;
+    color: rgb(8, 123, 230);
 
 }
 header > menu > .nav-up > ul > li{
