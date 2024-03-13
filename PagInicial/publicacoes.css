@@ -16,7 +16,7 @@
     padding: 10px;
 }
 .reacoes .btn:hover{
-    background-color: blue;
+    background-color:rgb(8, 123, 230);;
     color: white;
     font-weight: bold;
     transition: 0.5s ease-in-out;
