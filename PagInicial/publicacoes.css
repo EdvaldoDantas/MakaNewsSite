@@ -1,14 +1,4 @@
-.publicar{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-#pub{
-    border-radius: 10px;
-    padding: 7px;
-    margin-left: 10px;
-    margin-right:10px ;
-}
+
 .btn{
     padding: 5px;
 }
@@ -33,7 +23,6 @@
     border: 1px solid gray;
 }
 #feed{
-    border-top: 3px solid rgb(156, 151, 151);
     margin-top: 10px;
 }
 .idPerfil{

@@ -8,6 +8,7 @@ body, html{
    
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 header{
     border: 2px solid rgb(138, 136, 136);
@@ -53,19 +54,23 @@ header > menu > nav > ul > li{
     margin-left:  20px;
 }
 main{
-    padding-top: 90px;
+    padding-top: 100px;
     background-color:white;
 }
 span{
     user-select: none;
     cursor: default;
 }
-#navgeter .material-symbols-outlined:hover{
-    color: rgb(0, 132, 255);
-    border-bottom: 3px solid  rgb(8, 123, 230);
-    transition: .5s;
-    font-size: 2em;
-}
 button{
     user-select: none;
+}
+.pesquisar{
+    padding:5px ;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+#pesq{
+    padding: 12px;
+    width: 92%;
+    border-radius: 19px;
 }
