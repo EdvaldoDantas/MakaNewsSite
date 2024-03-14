@@ -63,6 +63,7 @@ main{
     padding-top: 100px;
     background-color:white;
     overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
 }
 span{
     user-select: none;
