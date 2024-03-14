@@ -8,7 +8,11 @@ body, html{
    
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+body{
+    overflow-y: hidden;
 }
 header{
     border: 2px solid rgb(138, 136, 136);
@@ -54,8 +58,11 @@ header > menu > nav > ul > li{
     margin-left:  20px;
 }
 main{
+    min-width: 100vw;
+    height: calc(100vh - 210px);
     padding-top: 100px;
     background-color:white;
+    overflow-y: auto !important;
 }
 span{
     user-select: none;
