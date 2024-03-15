@@ -51,4 +51,5 @@ definicao = document.getElementById("Def")
 definicao.addEventListener('click',()=>{
     window.location.href = 'Definições.html'
 })
+document.body.style.userSelect = 'none'
 
