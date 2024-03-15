@@ -53,3 +53,6 @@ definicao.addEventListener('click',()=>{
 })
 document.body.style.userSelect = 'none'
 
+function abrirLink(){
+    window.location.href = 'chat.html'
+}

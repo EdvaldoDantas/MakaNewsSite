@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.acima{
+    display: flex;
+    background-color:  rgb(8, 123, 230);
+    color: white;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+.acima h1{
+ font-size: 1.4em;
+ margin-left: 35%;
+ 
+}
+.acima span{
+    cursor: default;
+}
+.chat-grupos{
+    display: flex;
+    border-bottom: 1px solid black;
+    height:35px;
+}
+.div-chat, .div-grupo{
+    width: 50%;
+    border: 1px solid rgba(36, 27, 27, 0.897);
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-chat:hover, .div-grupo:hover{
+    border-bottom: 2px solid blue;
+}
+.div-chat{
+    border-left: none;
+    border-right: none;
+}
+.div-grupo{
+    border-right:none ;
+}
+#caixa-de-dialogo{
+    display: flex;
+    width: 100%;
+    display: flex;
+    border: 1px solid black; 
+    border-top: none;
+    padding-bottom: 7px;
+}
+.foto-e-nome{
+  display: flex;
+}
